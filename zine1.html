@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/zines.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="horizontal-scroll-wrapper">
+        <figure>
+            <img src="img/zine2.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+        <figure>
+            <img src="img/zine1.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+        <figure>
+            <img src="img/zine3.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+        <figure>
+            <img src="img/zine4.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+        <figure>
+            <img src="img/zine5.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+        <figure>
+            <img src="img/zine6.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+        <figure>
+            <img src="img/zine2.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+        <figure>
+            <img src="img/zine1.jpg" alt="">
+            <figcaption>lorem ipsum...</figcaption>
+        </figure>
+    </div>
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+    <script>
+        $(function() {
+			$("html, body, *").mousewheel(function(event, delta) {
+				this.scrollLeft -= (delta * 80);
+				event.preventDefault();
+			});
+		});
+    </script>
+</body>
+
+</html>
