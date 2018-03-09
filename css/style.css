@@ -1,0 +1,600 @@
+/********** color key **********/
+
+/* 
+pink - #ffb3ba	(255,179,186)
+orange - #ffdfba	(255,223,186)
+yellow - #ffffba	(255,255,186)
+greeen - #baffc9	(186,255,201)
+blue - #bae1ff	(186,225,255) 
+*/
+
+/* *************************** */
+
+body {
+    color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Special Elite', cursive; */
+    /* background: url(../img/paper.png); */
+}
+
+/* h3 {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(51, 51, 51, .9);
+} */
+
+/* ************
+ navbar 
+************ */
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    /* background-color: #fff; */
+    background-color: rgb(51, 51, 51);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    /* color: #818181; */
+    color: #ddd;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    /* color: #f1f1f1; */
+    color: #818181;
+}
+
+/* #mySidenav>a.active:nth-child(2) {
+    color: #ffffba;
+}
+
+#mySidenav>a.active:nth-child(3) {
+    color: #baffc9;
+}
+
+#mySidenav>a.active:nth-child(4) {
+    color: #ffdfba;
+}
+
+#mySidenav>a.active:nth-child(5) {
+    color: rgb(206, 193, 231);
+}
+
+#mySidenav>a.active:nth-child(6) {
+    color: #bae1ff;
+} */
+
+/* Position and style the close button (top right corner) */
+
+.sidenav #closebtn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav {
+    font-family: 'Special Elite', cursive;
+}
+
+#openbtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    /* margin-left: 50px; */
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgb(51, 51, 51);
+    /* background: linear-gradient(to bottom right, rgb(51 ,51, 51), #f4d1ff); */
+    padding: 5px 15px;
+
+    font-family: 'Special Elite', cursive;
+    color: #fff;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+/* slides navigation */
+
+/* .fp-slidesNav {
+    left: 20px !important;
+} */
+
+.fp-slidesNav ul li a span {
+    background: rgb(51, 51, 51);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/* #main {
+    transition: margin-left .5s;
+    padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.container>h3, .container-fluid h3 {
+    /* font-size: 75px; */
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.container p, .container-fluid p {
+    padding: 5px 15px;
+    line-height: 2;
+}
+
+#fp-nav {
+    top: 10%;
+}
+
+/* change arrow icons */
+
+.fp-controlArrow.fp-prev {
+    /* left: 20px; */
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(../img/left.png) no-repeat center;
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-next {
+    /* right: 20px; */
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(../img/right.png) no-repeat center;
+    cursor: pointer;
+}
+
+/* vertical navbar */
+
+/* #fp-nav ul li a span {
+    background-color: rgba(255, 209, 220, .9);
+} */
+
+/*  *******************
+
+ home 
+
+******************* */
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#home h3 {
+    text-shadow: 2px 2px 8px rgba(51, 51, 51, .9);
+}
+
+.bottom-home {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.bottom-home p {
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.bottom-home a {
+    color: #fff;
+    /* color: rgb(51, 51, 51); */
+}
+
+.bottom-home a:hover {
+    color: rgb(51, 51, 51);
+    /* color: #ddd; */
+}
+
+/*  *******************
+
+ about 
+
+******************* */
+
+#about {
+    /* background: #ffb3ba; */
+    /* background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/3.jpg) no-repeat center center; */
+    /* background-size: cover; */
+}
+
+/*  *******************
+
+ contact 
+
+******************* */
+
+/* input[type], textarea.form-control {
+    background-color: #ddd;
+} */
+
+#contact {
+    /* background: #2b303a; */
+    /* background: #e5cce4; */
+    /* color: #ddd; */
+    /* background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/1.jpg) no-repeat center center;
+    background-size: cover; */
+    /* color: #fff; */
+    background: url(../img/paper.png);
+}
+
+#footer {
+    background-color: rgb(51, 51, 51);
+}
+
+#contact a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: rgb(51, 51, 51);
+}
+
+#contact li {
+    display: inline-block;
+    padding: 15px;
+    font-weight: bold;
+}
+
+li.first-link {
+    padding-left: 0;
+}
+
+li.last-link {
+    padding-right: 0;
+}
+
+#contact .links {
+    padding-left: 0;
+}
+
+.btn-sub {
+    /* border: 1px solid rgb(51, 51, 51); */
+    background-color: rgb(51, 51, 51);
+    padding: 10px 20px;
+    border-radius: 5%;
+    /* background-color: #bae1ff; */
+    color: #ddd;
+    /* border: 2px solid rgb(51, 51, 51); */
+}
+
+.btn-sub:hover {
+    /* border: 2px solid #ddd; */
+    /* background-color: rgb(51, 51, 51); */
+    background-color: #ddd;
+    color: rgb(51, 51, 51);
+}
+
+.form-control:focus {
+    border: 1px solid #58a4b0;
+}
+
+.form-group {
+    padding-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-info h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+    line-height: 57px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 57px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#contact .social a {
+    margin: 29px 10px;
+    display: inline-block;
+}
+
+.social a:hover .fa-twitter {
+    color: #00abf0;
+}
+
+.social a:hover .fa-facebook {
+    color: #39579a;
+}
+
+.social a:hover .fa-instagram {
+    color: #dd2a7b;
+}
+
+.social a:hover .fa-envelope {
+    color: #feda77;
+}
+
+.social a:hover .fa-linkedin-square {
+    color: #0077b5;
+}
+
+.social a:hover .fa-vimeo {
+    color: #1ab7ea;
+}
+
+.social a:hover .fa-tumblr-square {
+    color: #35465c;
+}
+
+.social a:hover .fa-pinterest {
+    color: #bd081c;
+}
+
+.social a:hover .fa-youtube-play {
+    color: #ff0000;
+}
+
+/* *********************
+projects
+********************* */
+
+#zine {
+    /* background: #ffdfba; */
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* *********************
+gallery
+********************* */
+
+#gallery {
+    /* background: #ffffba; */
+    /* background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/2.jpg) no-repeat center center;
+    background-size: cover; */
+}
+
+/* #slide2, #slide3, #slide4 {
+    background-color: rgb(51 ,51, 51);
+} */
+
+.col-text {
+    padding: 25px 10px;
+}
+
+#slide2 {
+    /* background: #ffffba; */
+    /* Background pattern from Subtle Patterns */
+    /* background: linear-gradient(rgba(255, 255, 186, .4), rgba(255, 255, 186, .3)), url(../img/memphis.png); */
+    /* min-height: 100vh; */
+    /* margin-left: 5px; */
+}
+
+/* #slide2 .col-pic {
+    min-height: 100vh;
+    background: url(../img/4.jpg) no-repeat center center;
+    background-size: cover;
+} */
+
+#slide3 {
+    /* background: #bae1ff; */
+    /* background: linear-gradient(rgba(186, 225, 255, .4), rgba(186, 225, 255, .3)), url(../img/memphis.png); */
+    /* min-height: 100vh; */
+}
+
+/* #slide3 .col-pic {
+    min-height: 100vh;
+    background: url(../img/3.jpg) no-repeat center center;
+    background-size: cover;
+} */
+
+#slide4 {
+    /* background: #FAEEC8; */
+    /* background: #cec1e7; */
+    /* background: linear-gradient(rgba(206, 193, 231, .4), rgba(206, 193, 231, .3)), url(../img/memphis.png); */
+    /* min-height: 100vh; */
+    /* color: rgb(51, 51, 51); */
+}
+
+/* #slide4 .col-pic {
+    min-height: 100vh;
+    background: url(../img/1.jpg) no-repeat center center;
+    background-size: cover;
+} */
+
+.hide-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    /* .slide .col-text {
+        margin-left: 5px;
+    } */
+    /*------------------------------------*\
+    BORDERS
+\*------------------------------------*/
+    /* Create a series of empty pseudo-elements... */
+    html:before, html:after, body:before, body:after {
+        content: "";
+        background: rgb(51, 51, 51);
+        /* background: linear-gradient(to bottom right, rgb(51 ,51, 51), #f4d1ff); */
+        position: fixed;
+        display: block;
+        z-index: 5;
+    }
+    /* ...and position them! */
+    html:before {
+        height: 20px;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    html:after {
+        width: 20px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    body:before {
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    body:after {
+        width: 20px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .display-mobile {
+        display: none;
+    }
+    .hide-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 90%;
+    }
+    .container>h3, .container-fluid h3 {
+        font-size: 40px;
+    }
+    .col-md-4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #openbtn {
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        /* background: linear-gradient(to bottom right, transparent, transparent); */
+    }
+    /* #slide2 {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/4.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #slide4 {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #slide3 {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/3.jpg) no-repeat center center;
+        background-size: cover;
+    } */
+    /* .fp-controlArrow.fp-next {
+        display: none;
+    }
+    .fp-controlArrow.fp-prev {
+        display: none;
+    } */
+}
+
+#zine1 .zine-cover {
+    min-height: 100vh;
+    background: url(../img/zine4.jpg) no-repeat;
+    background-size: cover;
+}
+
+#zine3 .zine-cover {
+    min-height: 100vh;
+    background: url(../img/zine6.jpg) no-repeat;
+    background-size: cover;
+}
+
+#zine2 .zine-cover {
+    min-height: 100vh;
+    background: url(../img/zine7.jpg) no-repeat;
+    background-size: cover;
+}
+
+#gallery .zine-cover {
+    min-height: 100vh;
+    background: url(../img/zine1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    /*whatever width you want*/
+}
+
+.pic-cap {
+    font-family: 'Special Elite', cursive;
+}
+
+img {
+    border: 2px solid black;
+}
