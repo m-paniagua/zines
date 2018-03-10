@@ -1,73 +1,82 @@
-body {
-    background: url(../img/paper.png);
-}
-
-.horizontal-scroll-wrapper {
-    white-space: nowrap;
-    height: 90vh;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 figure {
-    display: inline-block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 15px;
 }
 
-img {
-    display: inline;
-    max-height: 80vh;
-    border: 2px solid black;
-}
+/*------------------------------------*\
+        BORDERS
+    \*------------------------------------*/
 
-.heading {
+/* Create a series of empty pseudo-elements... */
+
+html:before, html:after, body:before, body:after {
+    content: "";
+    background: rgb(51, 51, 51);
     position: fixed;
-    top: 0;
-    left: 50px;
+    display: block;
+    z-index: 5;
 }
 
-/* @media screen and (min-width: 992px) { */
-    /*------------------------------------*\
-    BORDERS
-\*------------------------------------*/
-    /* Create a series of empty pseudo-elements... */
-    html:before, html:after, body:before, body:after {
-        content: "";
-        background: rgb(51, 51, 51);
-        /* background: linear-gradient(to bottom right, rgb(51 ,51, 51), #f4d1ff); */
-        position: fixed;
-        display: block;
-        z-index: 5;
-    }
-    /* ...and position them! */
-    html:before {
-        height: 20px;
-        left: 0;
-        right: 0;
-        top: 0;
-    }
-    html:after {
-        width: 20px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
-    body:before {
-        height: 20px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-    body:after {
-        width: 20px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-    }
+/* ...and position them! */
+
+html:before {
+    height: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+html:after {
+    width: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body:before {
+    height: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body:after {
+    width: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 992px) {
     .display-mobile {
         display: none;
     }
     .hide-mobile {
         display: block;
     }
-/* } */
+    .horizontal-scroll-wrapper {
+        white-space: nowrap;
+        height: 90vh;
+    }
+    figure {
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    img {
+        display: inline;
+        max-height: 80vh;
+        border: 2px solid black;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    img {
+        margin: 0 auto;
+    }
+}
