@@ -1,3 +1,7 @@
+body {
+    font-family: 'Special Elite', cursive;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -73,10 +77,28 @@ body:after {
         max-height: 80vh;
         border: 2px solid black;
     }
+    .zine-text {
+        display: inline-block;
+        position: relative;
+        max-width: 50vw;
+        /* height: 80vh; */
+        top: -300px;
+        /* margin-bottom: 100px; */
+        /* top: 50%;
+        transform: translateY(-50%); */
+    }
+    .zine-text>p {
+        display: inline;
+        max-height: 80vh;
+        white-space: normal;
+    }
 }
 
 @media screen and (max-width: 991px) {
     img {
         margin: 0 auto;
+    }
+    .zine-text>p {
+        padding: 5px 25px;
     }
 }
