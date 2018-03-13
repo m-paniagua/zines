@@ -410,7 +410,7 @@ gallery
         left: 0;
     }
     #zine1 {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/zine4.jpg) no-repeat center center;
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/chillscapes/cover.jpg) no-repeat center center;
         background-size: cover;
     }
     #zine2 {

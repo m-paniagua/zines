@@ -8,9 +8,9 @@ img {
     border: 2px solid black;
 }
 
-/* figure {
-    padding: 15px;
-} */
+figure {
+    padding-top: 15px;
+}
 
 /*------------------------------------*\
         BORDERS
