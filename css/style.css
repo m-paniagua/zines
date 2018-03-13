@@ -435,6 +435,10 @@ gallery
     .fp-controlArrow.fp-prev {
         display: none;
     } */
+
+    .fp-slidesNav {
+        display: none;
+    }
 }
 
 #zine1 .zine-cover {

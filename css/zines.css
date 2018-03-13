@@ -5,6 +5,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    border: 2px solid black;
 }
 
 figure {
@@ -75,7 +76,6 @@ body:after {
     img {
         display: inline;
         max-height: 80vh;
-        border: 2px solid black;
     }
     .zine-text {
         display: inline-block;
