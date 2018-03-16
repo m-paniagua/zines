@@ -409,7 +409,7 @@ gallery
         top: 0;
         left: 0;
     }
-    #zine1 {
+    #zine1, #slide1 {
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/chillscapes/cover.jpg) no-repeat center center;
         background-size: cover;
     }
