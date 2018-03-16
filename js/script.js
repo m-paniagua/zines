@@ -4,21 +4,29 @@ $(document).ready(function () {
         // navigationPosition: 'right',
         // navigationTooltips: ['Home', 'About', 'Projects', 'Gallery', 'Contact']
         // anchors: ['about', 'projects', 'gallery', 'contact']
-        slidesNavigation: true,
-		slidesNavPosition: 'bottom',
+
+        // slidesNavigation: true,
+        // slidesNavPosition: 'bottom',
+
         scrollingSpeed: 1000,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 2000,
         anchors: ['go-home', 'go-about', 'go-projects', 'go-gallery', 'go-contact'],
-        menu: '#mySidenav'
+        menu: '#mySidenav',
+        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+            var loadedSlide = $(this);
+            var totalItems = loadedSlide.siblings().length;
+            var numContainer = loadedSlide.closest('.fp-section').find('.num');
+            numContainer.html((slideIndex + 1) + ' / ' + (totalItems + 1));
+        }
         // verticalCentered: false
         // responsiveWidth: 992,
     });
 
     $('#openbtn').click(function (e) {
         e.stopPropagation();
-        $('#mySidenav').css('width', '350px');
+        $('#mySidenav').css('width', '300px');
     });
 
     $('#closebtn').click(function (e) {
@@ -29,19 +37,4 @@ $(document).ready(function () {
     $('#fullpage').click(function (e) {
         $('#mySidenav').css('width', '0');
     });
-
-    // var $window = $(window),
-    //     $html = $('html');
-
-    // function resize() {
-    //     if ($window.width() < 514) {
-    //         return $html.addClass('mobile');
-    //     }
-
-    //     $html.removeClass('mobile');
-    // }
-
-    // $window
-    //     .resize(resize)
-    //     .trigger('resize');
 });
