@@ -330,7 +330,7 @@ gallery
 
 #zine1 .zine-cover {
     min-height: 100vh;
-    background: url(../img/chillscapes/cover.jpg) no-repeat;
+    background: url(../img/chillscapes/cover.jpeg) no-repeat;
     background-size: cover;
 }
 
@@ -348,7 +348,7 @@ gallery
 
 #gallery .zine-cover {
     min-height: 100vh;
-    background: url(../img/chillscapes/cover.jpg) no-repeat;
+    background: url(../img/chillscapes/cover.jpeg) no-repeat;
     background-size: cover;
 }
 
@@ -424,7 +424,7 @@ gallery
         left: 0;
     }
     #zine1, #slide1 {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/chillscapes/cover.jpg) no-repeat center center;
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/chillscapes/cover.jpeg) no-repeat center center;
         background-size: cover;
     }
     #zine2 {
