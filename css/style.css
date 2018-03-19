@@ -316,19 +316,20 @@ li.last-link {
 }
 
 /* *********************
-projects
+monotone
 ********************* */
 
-#zine {
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/bg4.jpg) no-repeat center center;
+#zine .zine-cover {
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/monotone/cover.jpeg) no-repeat center center;
     background-size: cover;
 }
 
 /* *********************
-gallery
+chillscapes
 ********************* */
 
-#zine1 .zine-cover {
+/* #zine1 .zine-cover {
     min-height: 100vh;
     background: url(../img/chillscapes/cover.jpeg) no-repeat;
     background-size: cover;
@@ -344,15 +345,23 @@ gallery
     min-height: 100vh;
     background: url(../img/zine7.jpg) no-repeat;
     background-size: cover;
-}
+} */
 
-#gallery .zine-cover {
+#chillscapes-zine .zine-cover {
     min-height: 100vh;
     background: url(../img/chillscapes/cover.jpeg) no-repeat;
     background-size: cover;
 }
 
+/* *********************
+eff & enn
+********************* */
 
+#fn .zine-cover {
+    min-height: 100vh;
+    background: url(../img/eff-enn/cover.jpg) no-repeat;
+    background-size: cover;
+}
 
 .col-text {
     padding: 25px 10px;
@@ -425,7 +434,11 @@ gallery
         top: 0;
         left: 0;
     }
-    #zine1, #slide1 {
+    #zine {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/monotone/cover.jpeg) no-repeat center center;
+        background-size: cover;
+    }
+    #slide1 {
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/chillscapes/cover.jpeg) no-repeat center center;
         background-size: cover;
     }
