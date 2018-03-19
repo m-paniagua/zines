@@ -274,9 +274,16 @@ li.last-link {
     margin-top: 20px;
 }
 
-#contact .social a {
-    margin: 29px 10px;
+.social {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 5px;
+}
+
+.social a {
+    margin: 10px;
     display: inline-block;
+    font-size: 11px;
 }
 
 .social a:hover .fa-twitter {
@@ -359,7 +366,7 @@ eff & enn
 
 #fn .zine-cover {
     min-height: 100vh;
-    background: url(../img/eff-enn/cover.jpg) no-repeat;
+    background: url(../img/eff-enn/cover.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -459,5 +466,8 @@ eff & enn
     }
     .margin-b {
         margin-bottom: 20px;
+    }
+    .social {
+        bottom: 0;
     }
 }
