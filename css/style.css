@@ -352,6 +352,8 @@ gallery
     background-size: cover;
 }
 
+
+
 .col-text {
     padding: 25px 10px;
 }
@@ -441,5 +443,8 @@ gallery
     .num {
         bottom: 15px;
         right: 15px;
+    }
+    .margin-b {
+        margin-bottom: 20px;
     }
 }
