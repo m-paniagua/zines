@@ -356,7 +356,7 @@ chillscapes
 
 #chillscapes-zine .zine-cover {
     min-height: 100vh;
-    background: url(../img/chillscapes/cover.jpeg) no-repeat;
+    background: url(../img/chillscapes/cover.jpeg) no-repeat center center;
     background-size: cover;
 }
 
@@ -449,14 +449,14 @@ eff & enn
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/chillscapes/cover.jpeg) no-repeat center center;
         background-size: cover;
     }
-    #zine2 {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/zine7.jpg) no-repeat center center;
+    #fn {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/eff-enn/cover.jpg) no-repeat center center;
         background-size: cover;
     }
-    #zine3 {
+    /* #zine3 {
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/zine6.jpg) no-repeat center center;
         background-size: cover;
-    }
+    } */
     .fp-slidesNav {
         display: none;
     }
