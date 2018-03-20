@@ -406,6 +406,9 @@ eff & enn
     .zine-title {
         margin-top: 65px;
     }
+    img {
+        max-height: 60vh;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -448,4 +451,8 @@ eff & enn
     .social {
         bottom: 0;
     }
+    img {
+        max-height: 40vh;
+    }
 }
+
