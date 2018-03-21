@@ -12,7 +12,7 @@ $(document).ready(function () {
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 2000,
-        anchors: ['go-home', 'go-about', 'monotone', 'chillscapes', 'eff-enn', 'go-contact'],
+        anchors: ['go-home', 'go-about', 'chillscapes', 'monotone', 'eff-enn', 'go-contact'],
         menu: '#mySidenav',
         afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
             var loadedSlide = $(this);

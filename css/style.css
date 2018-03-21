@@ -3,8 +3,8 @@
 /* *************************** */
 
 body {
-    color: rgb(51, 51, 51);
-    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /* ************
@@ -26,7 +26,7 @@ body {
     /* Stay at the top */
     left: 0;
     /* background-color: #fff; */
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(0, 0, 0);
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -72,12 +72,14 @@ body {
 
 #openbtn {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    /* top: 20px;
+    left: 20px; */
+    top: 5px;
+    left: 5px;
     /* font-size: 25px; */
     cursor: pointer;
     z-index: 1;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(0, 0, 0);
     padding: 5px 10px;
     color: #fff;
 }
@@ -89,7 +91,7 @@ body {
 /* slides navigation */
 
 /* .fp-slidesNav ul li a span {
-    background: rgb(51, 51, 51);
+    background: rgb(0, 0, 0);
 } */
 
 .num {
@@ -114,7 +116,7 @@ body {
 
 .container>h3, .container-fluid h3 {
     font-size: 35px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 800;
     letter-spacing: 3px;
 }
@@ -184,7 +186,7 @@ body {
 }
 
 .bottom-home a:hover {
-    color: rgb(51, 51, 51);
+    color: rgb(0, 0, 0);
 }
 
 /*  *******************
@@ -200,16 +202,16 @@ body {
 ******************* */
 
 #footer {
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(0, 0, 0);
 }
 
 #contact a {
-    color: rgb(51, 51, 51);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 #contact a:hover {
-    color: rgb(51, 51, 51);
+    color: rgb(0, 0, 0);
 }
 
 #contact li {
@@ -230,8 +232,14 @@ li.last-link {
     padding-left: 0;
 }
 
+.contact a {
+    margin: 10px;
+    display: inline-block;
+    /* font-size: 11px; */
+}
+
 /* .btn-sub, .btn-sub:visited {
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(0, 0, 0);
     padding: 10px 20px;
     border-radius: 0;
     font-family: 'Special Elite', cursive;
@@ -240,9 +248,9 @@ li.last-link {
 }
 
 .btn-sub:hover {
-    border: 2px solid rgb(51, 51, 51);
+    border: 2px solid rgb(0, 0, 0);
     background-color: #ddd;
-    color: rgb(51, 51, 51);
+    color: rgb(0, 0, 0);
 }
 
 .form-control:focus {
@@ -277,7 +285,10 @@ li.last-link {
 .social {
     position: absolute;
     bottom: 10px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .social a {
@@ -328,7 +339,7 @@ monotone
 
 #zine .zine-cover {
     min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url(../img/monotone/cover.jpeg) no-repeat center center;
+    background: url(../img/monotone/cover.jpeg) no-repeat center center;
     background-size: cover;
 }
 
@@ -364,15 +375,13 @@ eff & enn
     /*------------------------------------*\
     BORDERS
 \*------------------------------------*/
-    /* Create a series of empty pseudo-elements... */
-    html:before, html:after, body:before, body:after {
+    /* html:before, html:after, body:before, body:after {
         content: "";
-        background: rgb(51, 51, 51);
+        background: rgb(0, 0, 0);
         position: fixed;
         display: block;
         z-index: 5;
     }
-    /* ...and position them! */
     html:before {
         height: 20px;
         left: 0;
@@ -396,7 +405,7 @@ eff & enn
         top: 0;
         bottom: 0;
         left: 0;
-    }
+    } */
     .display-mobile {
         display: none;
     }
@@ -455,4 +464,3 @@ eff & enn
         max-height: 40vh;
     }
 }
-
