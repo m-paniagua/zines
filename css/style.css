@@ -327,6 +327,11 @@ eff & enn
   display: none;
 }
 
+#shop-zine {
+  background: url(../img/bg4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 @media screen and (min-width: 992px) {
   .display-mobile {
     display: none;
