@@ -20,8 +20,9 @@ $(document).ready(function () {
       var numContainer = loadedSlide.closest('.fp-section').find('.num');
       numContainer.html((slideIndex + 1) + ' / ' + (totalItems + 1));
     },
-    verticalCentered: false
-    // responsiveWidth: 992,
+    verticalCentered: false,
+    scrollOverflow: true,
+    //    responsiveWidth: 992,
   });
 
   $('#openbtn').click(function (e) {
