@@ -25,17 +25,24 @@ $(document).ready(function () {
     //    responsiveWidth: 992,
   });
 
+  // $('#openbtn').click(function (e) {
+  //   e.stopPropagation();
+  //   $('#mySidenav').css('width', '300px');
+  // });
+
   $('#openbtn').click(function (e) {
     e.stopPropagation();
-    $('#mySidenav').css('width', '300px');
-  });
+    //  $('#mySidenav').css('width', '300px');
+    $('#mySidenav').toggleClass('show');
+    $("#openbtn").toggleClass("change");
+  });  
 
-  $('#closebtn').click(function (e) {
-    $('#mySidenav').css('width', '0');
-    e.stopPropagation();
-  });
+  // $('#closebtn').click(function (e) {
+  //   $('#mySidenav').css('width', '0');
+  //   e.stopPropagation();
+  // });
 
-  $('#fullpage').click(function (e) {
-    $('#mySidenav').css('width', '0');
-  });
+  // $('#fullpage').click(function (e) {
+  //   $('#mySidenav').css('width', '0');
+  // });
 });
