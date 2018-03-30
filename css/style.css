@@ -1,7 +1,3 @@
-/********** color key **********/
-
-/* *************************** */
-
 body {
   color: rgb(0, 0, 0);
   font-family: 'Cormorant Garamond', serif;
@@ -10,6 +6,7 @@ body {
 .row {
   height: 100vh;
 }
+
 /* ************
  navbar 
 ************ */
@@ -77,11 +74,8 @@ body {
 
 #openbtn {
   position: fixed;
-  /* top: 20px;
-    left: 20px; */
   top: 5px;
   left: 5px;
-  /* font-size: 25px; */
   cursor: pointer;
   z-index: 1;
   background-color: rgb(0, 0, 0);
@@ -93,11 +87,6 @@ body {
   color: #fff;
 }
 
-/* slides navigation */
-
-/* .fp-slidesNav ul li a span {
-    background: rgb(0, 0, 0);
-} */
 
 .num {
   position: absolute;
@@ -111,23 +100,24 @@ body {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 /* @media screen and (max-height: 450px) { */
-  @media screen and (max-height: 600px) {
+
+@media screen and (max-height: 600px) {
   .sidenav {
     /* padding-top: 15px; */
-    padding-top: 30px;    
+    padding-top: 30px;
   }
   .sidenav a {
     font-size: 18px;
   }
 }
 
-.container > h3,
+/* .container > h3,
 .container-fluid h3 {
   font-size: 35px;
   text-transform: capitalize;
   font-weight: 800;
   letter-spacing: 3px;
-}
+} */
 
 .container p,
 .container-fluid p {
@@ -172,10 +162,10 @@ body {
   color: #fff;
 }
 
-#home h3 {
+/* #home h3 {
   text-shadow: 2px 2px 8px rgba(51, 51, 51, .9);
   font-size: 80px;
-}
+} */
 
 .bottom-home {
   text-align: center;
@@ -246,57 +236,11 @@ li.last-link {
 .contact a {
   margin: 10px;
   display: inline-block;
-  /* font-size: 11px; */
 }
-
-/* .btn-sub, .btn-sub:visited {
-    background-color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 0;
-    font-family: 'Special Elite', cursive;
-    color: #ddd;
-    border: 2px solid #ddd;
-}
-
-.btn-sub:hover {
-    border: 2px solid rgb(0, 0, 0);
-    background-color: #ddd;
-    color: rgb(0, 0, 0);
-}
-
-.form-control:focus {
-    border: 1px solid #58a4b0;
-}
-
-.form-group {
-    padding-bottom: 15px;
-}
-
-.form-group label {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.contact-info h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    text-align: left;
-    line-height: 57px;
-}
-
-.contact-info p {
-    font-size: 14px;
-    line-height: 57px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-} */
 
 .social {
   position: absolute;
   bottom: 10px;
-  /* margin-left: 5px; */
   width: 95%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -384,40 +328,6 @@ eff & enn
 }
 
 @media screen and (min-width: 992px) {
-  /*------------------------------------*\
-    BORDERS
-\*------------------------------------*/
-  /* html:before, html:after, body:before, body:after {
-        content: "";
-        background: rgb(0, 0, 0);
-        position: fixed;
-        display: block;
-        z-index: 5;
-    }
-    html:before {
-        height: 20px;
-        left: 0;
-        right: 0;
-        top: 0;
-    }
-    html:after {
-        width: 20px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
-    body:before {
-        height: 20px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-    body:after {
-        width: 20px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-    } */
   .display-mobile {
     display: none;
   }
@@ -427,20 +337,17 @@ eff & enn
   .zine-title {
     margin-top: 65px;
   }
-  /* img {
-    max-height: 60vh;
-  } */
 }
 
 @media screen and (max-width: 991px) {
   body {
     font-size: 70%;
   }
-  .container > h3,
+  /* .container > h3,
   .container-fluid h3,
   #home h3 {
     font-size: 30px;
-  }
+  } */
   .col-md-4 {
     padding-left: 0;
     padding-right: 0;
@@ -471,13 +378,10 @@ eff & enn
     bottom: 15px;
     right: 15px;
   }
-  /* .margin-b {
-    margin-bottom: 20px;
-  } */
   .social {
     bottom: 0;
   }
-  img {
+  img.portrait {
     max-height: 40vh;
   }
 }
