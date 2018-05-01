@@ -35,7 +35,7 @@ $(document).ready(function () {
     //  $('#mySidenav').css('width', '300px');
     $('#mySidenav').toggleClass('show');
     $("#openbtn").toggleClass("change");
-  });  
+  });
 
   // $('#closebtn').click(function (e) {
   //   $('#mySidenav').css('width', '0');
